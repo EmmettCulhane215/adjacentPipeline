@@ -25,23 +25,12 @@ tar -zxvf kibana-4.3.0-darwin-x64.tar.gz
 ./kibana-4.3.0-darwin-x64/bin/kibana plugin --install elastic/sense
 ```
 
-### Installing
+### Set Index Mappings
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
+Set mappings for target indices to prepare for data ingestion
 ```
-Give the example
+setMappings.sh 
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
