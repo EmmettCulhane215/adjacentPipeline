@@ -1,17 +1,28 @@
-# Project Title
+# adjacentPipeline
 
-One Paragraph of project description goes here
+Load and aggragate data from s3 and SDK API DB 
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-
-What things you need to install the software and how to install them
-
+elasticsearch
 ```
-Give examples
+curl -L -O https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.3.4/elasticsearch-2.3.4.tar.gz
+```
+```
+tar -xvf elasticsearch-2.3.4.tar.gz
+```
+kibana
+```
+curl -L -O https://download.elastic.co/kibana/kibana/kibana-4.3.0-darwin-x64.tar.gz
+```
+```
+tar -zxvf kibana-4.3.0-darwin-x64.tar.gz
+```
+```
+./kibana-4.3.0-darwin-x64/bin/kibana plugin --install elastic/sense
 ```
 
 ### Installing
